@@ -1,0 +1,24 @@
+body {
+    background-color: #89b8ee;
+    font-family: Arial, Helvetica;
+    margin: 0px 200px 10px 200px;
+}
+.image1 {
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.centered {
+    text-align: center;
+}
+
+.pagehead {
+    font-family: "Lobster";
+}
+
+.links {
+    font-family: Arial, Helvetica;
+    color: #042c5a
+}
