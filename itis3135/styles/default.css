@@ -4,6 +4,22 @@ body {
     font-family: Arial, Helvetica;
     margin: 0px 200px 10px 200px;
 }
+
+table {
+    background-color: #c2cbe9;
+    border: 2px #042c5a solid;
+    margin: 0 auto;
+}
+
+tbody tr:nth-child(even) td {
+    background-color: #FFFFFF;
+}
+
+td {
+    background-color: #e8eff8;
+    border: 1px #042c5a solid;
+}
+
 .image1 {
     width: 300px;
     display: block;
@@ -12,7 +28,7 @@ body {
     border: 4px #042c5a solid;
 }
 
-.centered {
+.centered-text {
     text-align: center;
 }
 
@@ -21,6 +37,6 @@ body {
 }
 
 .links {
-    font-family: Arial, Helvetica;
+    font-family: "Lobster";
     color: #042c5a
 }
