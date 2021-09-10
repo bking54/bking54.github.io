@@ -11,6 +11,19 @@ table {
     margin: 0 auto;
 }
 
+select {
+    background-color: #c2cbe9;
+    border: 2px #042c5a solid;
+    margin: 0 auto;
+}
+
+input {
+    background-color: #c2cbe9;
+    border: 2px #042c5a solid;
+    margin: 0 auto;
+    text-align: right;
+}
+
 tbody tr:nth-child(even) td {
     background-color: #FFFFFF;
 }
@@ -23,6 +36,12 @@ td {
 figcaption {
     font-style: italic;
     font-size: 10pt;
+}
+
+button {
+    background-color: #042c5a;
+    color: #fafd4e;
+    padding: 3px 25px 3px 25px;
 }
 
 .image1 {
@@ -44,4 +63,8 @@ figcaption {
 .links {
     font-family: "Lobster";
     color: #042c5a
+}
+
+.inputbox {
+    width: 200px;
 }
