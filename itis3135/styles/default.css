@@ -20,6 +20,11 @@ td {
     border: 1px #042c5a solid;
 }
 
+figcaption {
+    font-style: italic;
+    font-size: 10pt;
+}
+
 .image1 {
     width: 300px;
     display: block;
