@@ -67,5 +67,16 @@ button {
 
 .inputbox {
     width: 200px;
+}
 
+.logo {
+    width: 100px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 15px 500px 10px;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
 }
