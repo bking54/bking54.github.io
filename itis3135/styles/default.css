@@ -75,6 +75,6 @@ button {
 
 .grid-container {
     display: grid;
-    grid-template-rows: auto auto;
+    grid-template-columns: auto;
     justify-content: center;
 }
