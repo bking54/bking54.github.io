@@ -40,7 +40,7 @@ function clearDisplay() {
 
 function calculatorInput(input) {
     let currentDisplay = document.getElementById("calculator-display").innerText;
-    let empty = currentDisplay == "0" || currentDisplay == "+" || currentDisplay == "-" || currentDisplay == "*" || currentDisplay == "/" || currentDisplay == "Infinity";
+    let empty = currentDisplay == "0" || currentDisplay == "+" || currentDisplay == "-" || currentDisplay == "*" || currentDisplay == "/" || currentDisplay == "Infinity" || currentDisplay == "NaN";
     let state = getState();
     switch (input) {
         case 0:
