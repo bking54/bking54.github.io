@@ -99,3 +99,7 @@ button {
     background-color: #e8eff8;
     border: 2px #fafd4e solid;
 }
+
+#polygonbox {
+    width: 150px;
+}
