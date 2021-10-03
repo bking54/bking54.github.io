@@ -72,8 +72,16 @@ function calculatorInput(input) {
                 value1 = parseFloat(document.getElementById("calculator-display").innerText);
                 operator = input;
                 document.getElementById("calculator-display").innerText = input;
-            } else if (state == 1) {
+            } else if (state == 1 && (currentDisplay == "0" || !empty)) {
                 value2 = parseFloat(document.getElementById("calculator-display").innerText);
+                let temp = doCalculation(value1, operator, value2);
+                clearDisplay();
+                value1 = temp;
+                operator = input;
+                value2 = undefined;
+                document.getElementById("calculator-display").innerText = input;
+            } else if (state == 1 && (currentDisplay != "0" && empty)) {
+                value2 = 0;
                 let temp = doCalculation(value1, operator, value2);
                 clearDisplay();
                 value1 = temp;
