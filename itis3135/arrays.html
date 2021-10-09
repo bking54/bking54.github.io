@@ -33,9 +33,23 @@
         </header>
         <main class="centered-text">
             <h2>Employee Salary Information</h2>
-            <div id="results">
-
+            <div id="arrays-grid">
+                <div>
+                    <button type="button" onclick="displayResults()">Display Results</button>
+                </div>
+                <div>
+                    <select>
+                        <option value="Darth Vader">Darth Vader</option>
+                    </select>
+                    <button type="button" onclick="displaySalary()">Display Salary</button>
+                </div>
+                <div>
+                    <input id="employee" type="text" placeholder="Enter a name">
+                    <input id="salary" type="text" placeholder="Enter a salary">
+                    <button type="button" onclick="addSalary()">Add Salary</button>
+                </div>
             </div>
+            <div class="centered-text" id="results"></div>
             <br>
         </main>
         <footer class="centered-text">

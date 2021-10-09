@@ -99,3 +99,9 @@ button {
     background-color: #e8eff8;
     border: 2px #fafd4e solid;
 }
+
+#arrays-grid {
+    display: grid;
+    grid-template-columns: repeat(1, fr);
+    row-gap: 10px;
+}
