@@ -35,13 +35,21 @@
             <h2>Employee Salary Information</h2>
             <div id="arrays-grid">
                 <div>
+                    <select id="arrays-dropdown">
+                        <option value="0">Darth Vader</option>
+                        <option value="1">Bender Bending Rodriguez</option>
+                        <option value="2">Pennywise the dancing clown</option>
+                        <option value="3">Margo Martindale</option>
+                        <option value="4">Michael Stevens</option>
+                        <option value="5">Ted Templeton Jr.</option>
+                        <option value="6">Spongebob Squarepants</option>
+                        <option value="7">Bernie Sanders</option>
+                        <option value="8">Norville Rogers</option>
+                    </select>
                     <button type="button" onclick="displayResults()">Display Results</button>
                 </div>
                 <div>
-                    <select>
-                        <option value="Darth Vader">Darth Vader</option>
-                    </select>
-                    <button type="button" onclick="displaySalary()">Display Salary</button>
+                    <button type="button" onclick="displaySalary()">Display Salaries Table</button>
                 </div>
                 <div>
                     <input id="employee" type="text" placeholder="Enter a name">
@@ -49,6 +57,9 @@
                     <button type="button" onclick="addSalary()">Add Salary</button>
                 </div>
             </div>
+            <script>
+                moveCursor();
+            </script>
             <div class="centered-text" id="results"></div>
             <br>
         </main>
