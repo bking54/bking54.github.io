@@ -8,7 +8,7 @@ function displayResults() {
     let avg;
     let sum = 0.0;
     for (let n = 0; n < salaries.length; n++) sum += salaries[n];
-    avg = (sum / salaries.length).toFixed(2);
+    avg = sum / salaries.length;
 
     let employeeIndex = parseInt(document.getElementById("arrays-dropdown").value);
 
@@ -41,7 +41,7 @@ function addSalary() {
         document.getElementById("results").innerHTML = "<h3>New Employee Entry</h3><p>New Employee: " + newEmployee + "</p><p>Starting Salary: $" + newSalary + "</p";
         document.getElementById("arrays-dropdown").innerHTML += ("<option value='" + employees.length + "'>" + newEmployee + "</option>");
         employees[employees.length] = newEmployee;
-        salaries[salaries.length] = newSalary;
+        salaries[salaries.length] = parseFloat(newSalary);
         document.getElementById("salary").value = "";
         document.getElementById("employee").value = "";
     }
