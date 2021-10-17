@@ -76,10 +76,6 @@ abbr {
 
 }
 
-img {
-  max-width: 100px;
-}
-
 label {
   color:hsl(59, 100%, 79%);
 }
@@ -93,13 +89,18 @@ a {
   color: powderblue;
 }
 
+.candle-images {
+  width: 100px;
+  height: 70px;
+}
+
 /* whitespace */
 .whitespace {
   padding: 8px;
 }
 
 .whitespace2 {
-  padding: 60px;
+  padding: 18px;
 }
 
 .close:hover,
@@ -109,4 +110,7 @@ a {
   cursor: pointer;
 }
 
+#table-description {
+  color: #262626;
+}
 

@@ -56,6 +56,10 @@ button {
     text-align: center;
 }
 
+.left-text {
+    text-align: left;
+}
+
 .pagehead {
     font-family: "Lobster";
 }
