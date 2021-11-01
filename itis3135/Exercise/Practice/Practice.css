@@ -46,6 +46,7 @@ ul li {
 	margin-top: .5em;
 	margin-bottom: .7em;
 	color: blue;
+	font-weight: bold;
 }
 input {
     width: 150px;
@@ -56,7 +57,23 @@ input {
 	width: 1000px;
 }
 /* add styling for buttons on homepage */
+#place_order {
+	background-color: #190c5e;
+	color: #cfe45b;
+	height: 30px;
+}
 
+#clear_order {
+	background-color: #190c5e;
+	color: #cfe45b;
+	height: 30px;
+}
+
+#contact_us {
+	background-color: #190c5e;
+	color: #cfe45b;
+	height: 30px;
+}
 
 
 
