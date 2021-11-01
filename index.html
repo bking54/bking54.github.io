@@ -2,47 +2,128 @@
 <html lang="en">
     <head>
         <title>Bradley King's Webpage</title>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab">
         <style>
             header {
-                border: 3px blue solid;
+                border: 5px #b3a369 solid;
+                background-color: #00703c;
+                color: #ffffff;
             }
 
             footer {
-                border: 3px red solid;
+                border: 5px #b3a369 solid;
+                background-color: #2b2b2b;
+                color: #ffffff;
+            }
+
+            h1, h2, h3 {
+                font-family: "Oswald";
+                text-align: center;
+            }
+
+            a {
+                font-family: "Oswald";
+                color: #ffffff;
+                text-decoration: none;
+            }
+
+            p {
+                text-align: center;
+                font-family: "Roboto Slab";
             }
 
             .content {
-                border: 3px black solid;
-                padding: 20px;
+                border-left: 5px #b3a369 solid;
+                border-right: 5px #b3a369 solid;
+                background-color: #e1e1e1;
+                padding: 5px;
             }
 
             .content-grid {
                 display: grid;
-                grid-template-columns: 1fr 8fr 1fr;
+                grid-template-columns: 1fr 3fr 1fr;
+            }
+
+            .center-content {
+                padding: 10px 0px 10px 0px;
+                border-top: 5px #b3a369 solid;
+                display: flex;
+                justify-content: center;
+            }
+
+            .large-heading {
+                font-size: 50px;
+            }
+
+            .medium-heading {
+                font-size: 30px;
+            }
+
+            .main-image {
+                max-height: 500px;
+            }
+
+            .header-grid {
+                display: grid;
+                grid-template-columns: 1fr 5fr 1fr;
+            }
+
+            .logobox {
+                display: flex;
+                justify-content: center;
+                margin: auto;
+            }
+
+            .logo {
+                max-height: 60px;
             }
         </style>
     </head>
     <body>
         <header>
-            
+            <div class="header-grid">
+                <div class="logobox">
+                    <img class="logo" src="https://www.charlotte.edu/sites/all/themes/uncctheme/assets/images/charlotte-logo.png" alt="UNCC Logo">
+                </div>
+                <h1 class="large-heading">Bradley King's Homepage</h1>
+                <div class="logobox">
+                    <img class="logo" src="https://www.charlotte.edu/sites/all/themes/uncctheme/assets/images/charlotte-logo.png" alt="UNCC Logo">
+                </div>
+            </div>
+            <div class="center-content">
+                <nav>
+                    <a href="itis3135/index.html">ITIS 3135 Course Page</a>
+                    |
+                    <a href="http://github.com/bking54">My GitHub</a>
+                    |
+                    <a href="https://www.freecodecamp.org/fcc861a45eb-92cf-41d7-800c-6bb33bba24c0">My freeCodeCamp</a>
+                </nav>
+            </div>
         </header>
         <main>
             <div class="content-grid">
-                <div class="content"></div>
-                <div class="content"></div>
-                <div class="content"></div>
+                <div></div>
+                <div class="content">
+                    <h2 class="medium-heading">Welcome to my UNC Charlotte webpage!</h2>
+                    <div class="center-content">
+                        <a href="itis3135/images/mypic.jpg">
+                            <img class="main-image" src="itis3135/images/mypic.jpg" alt="A picture of me.">
+                        </a>
+                    </div>
+                    <p>My name is Bradley King, and I am a senior at UNC Charlotte. I am currently pursuing a bachelor of science degree in computer science and a minor in mathematics. Please feel free to check out all of my links found in the navigation bar.</p>
+                </div>
+                <div></div>
             </div>
         </main>
         <footer>
-            
-            <br>
             <h3>Created by Bradley King 2021</h3>
-            <br>
-            <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.uncc.edu%2Fbking54%2Findex.html" target="_blank">
-                <img src="itis3135/images/button-valid-html5.gif" width="88" height="31" alt="Link to HTML validator"></a>
-            <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.uncc.edu%2Fbking54%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" target="_blank">
-                <img src="itis3135/images/button-valid-css.gif" width="88" height="31" alt="Link to CSS validator"></a>
-            </footer>
+            <div class="center-content">
+                <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.uncc.edu%2Fbking54%2Findex.html" target="_blank">
+                    <img src="itis3135/images/button-valid-html5.gif" width="88" height="31" alt="Link to HTML validator"></a>
+                <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.uncc.edu%2Fbking54%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" target="_blank">
+                    <img src="itis3135/images/button-valid-css.gif" width="88" height="31" alt="Link to CSS validator"></a>
+            </div>
+        </footer>
     </body>
 </html>
