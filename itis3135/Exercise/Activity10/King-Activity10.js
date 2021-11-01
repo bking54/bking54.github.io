@@ -8,12 +8,16 @@ $(document).ready(function() {
         });
 
         // set up the event handlers for each link
+        $('#image_list a').click(function(evt) {
 
-    			// get the image URL and caption for each image and animate the caption
+    	        // get the image URL and caption for each image and animate the caption
+                
 
-            // cancel the default action of each link
+                // cancel the default action of each link
+                evt.preventDefault();
+        });
 
 
-    // move the focus to the first link
+        // move the focus to the first link
 
 }); // end ready
