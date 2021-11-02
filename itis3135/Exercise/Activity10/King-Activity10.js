@@ -15,11 +15,11 @@ $(document).ready(function() {
                 let caption = $(this).attr('title');
                 $('#caption').fadeOut(3000);
                 $('#image').fadeOut(3000, function() {
+                        $('#image').attr('src', image_URL);
                         $('#caption').text(caption);
                         $('#caption').fadeIn(3000);
-                        $('#caption').animate({fontSize: '2.0em'}, 2000);
-                        $('#image').attr('src', image_URL);
                         $('#image').fadeIn(3000);
+                        $('#caption').animate({fontSize: '2.0em'}, 3000);
                 });
 
                 //focus on  first link again
