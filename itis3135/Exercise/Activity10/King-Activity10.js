@@ -22,9 +22,6 @@ $(document).ready(function() {
                         $('#caption').animate({fontSize: '2.0em'}, 3000);
                 });
 
-                //focus on  first link again
-                $('#image_list a').first().focus();
-
                 // cancel the default action of each link
                 evt.preventDefault();
         });
