@@ -13,8 +13,8 @@ $(document).ready(function() {
     	        // get the image URL and caption for each image and animate the caption
                 let image_URL = $(this).attr('href');
                 let caption = $(this).attr('title');
-                $('#caption').fadeOut(3000);
-                $('#image').fadeOut(3000, function() {
+                $('#caption').stop(true).fadeOut(3000);
+                $('#image').stop(true).fadeOut(3000, function() {
                         $('#image').attr('src', image_URL);
                         $('#caption').text(caption);
                         $('#caption').fadeIn(3000);
