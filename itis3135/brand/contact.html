@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Brand Contact Page</title>
+        <!-- My Palette: https://coolors.co/c2efeb-e0ca3c-255c99-190b28-ffec81-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+        <link href="styles/default.css" rel="stylesheet" type="text/css">
+        <script src="https://www.w3schools.com/lib/w3.js"></script>
+        <script src="scripts/jquery.js"></script>
+        <script src="scripts/loadpage.js"></script>
+        <script src="scripts/contact.js"></script>
+        <link href="images/kangaroo-openclipart-org.png" rel="shortcut icon">
+    </head>
+    <body>
+        <div w3-include-html="components/class_header.html"></div>
+        <main class="yellow-text">
+            <h2 class="centered-text dark-yellow-text">Contact Us</h2>
+            <p class="centered-text">Phone Number: (919)123-4567  -  Email: support@bluekangaroo.com  -  Address: 305 Maple Dr, Charlotte, NC</p>
+            <p class="centered-text">Please fill out the following form to get in touch with our staff about your experience as a customer of Blue Kangaroo Enterprises. We will get back to you at our earliest convienence. Please allow 3-5 business days before resubmitting feedback.</p>
+            <h3 class="centered-text dark-yellow-text">Customer Feedback Form</h3>
+            <div class="centered-text" id="results"></div>
+            <div class="form-box">
+                <form action="#">
+                    <fieldset>
+                        <legend>Contact Information</legend>
+                        <label for="fname">First Name:</label>
+                        <input type="text" name="fname" id="fname" required><br>
+                        <label for="lname">Last Name:</label>
+                        <input type="text" name="lname" id="lname" required><br>
+                        <label for="email">Email:</label>
+                        <input type="text" name="email" id="email" placeholder="example@example.com" required><br>
+                        <label>Feedback:</label>
+                        <input type="textarea" rows="7" cols="30" name="feedback" id="feedback" required>
+                    </fieldset>
+                    <input type="submit" id="submit" onclick="submit()"><br>
+                </form>
+            </div>
+            <br>
+        </main>
+        <div w3-include-html="components/class_footer.html"></div>
+    </body>
+</html>
