@@ -8,7 +8,7 @@
 html {
     color: hsl(225, 64%, 30%);
     background-color: hsl(210, 50%, 95%);
-    border: 10px solid hsl(210, 50%, 85%);;
+    border: 10px solid hsl(210, 50%, 85%);
 }
 
 header {
@@ -36,7 +36,7 @@ h1, h2, h3 {
 
 h1 {
     font-size: 4em;
-    font-weight: 1000;
+    font-weight: bold;
 }
 
 h2 {
@@ -45,19 +45,24 @@ h2 {
 
 nav a {
     text-decoration: none;
-    color: hsl(225, 64%, 30%);
+    color: hsl(345, 63%, 40%);
     font-family: "Amatic SC";
     font-size: 1.5em;
     font-weight: bold;
 }
 
 nav a:hover {
-    color: hsl(225, 64%, 50%);
+    color: hsl(345, 63%, 55%);
 }
 
  nav {
      text-align: center;
      color: hsl(345, 63%, 70%);
+ }
+
+ p {
+     padding: 10px;
+     font-family: "Open Sans";
  }
 
 /* Classes */
@@ -96,4 +101,44 @@ nav a:hover {
     border-left: 15px solid hsl(345, 63%, 70%);
     border-right: 15px solid hsl(345, 63%, 70%);
     background-color: #ffffff;
+}
+
+.menu-icon {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.menu-div {
+    position: relative;
+}
+
+.footer-nav {
+    background-color: hsl(12, 100%, 90%);;
+    padding: 10px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 4fr 2fr;
+}
+
+.content-grid-index {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.content-box {
+    border: 10px solid hsl(210, 50%, 85%);
+    background-color: hsl(210, 50%, 95%);
+    padding: 20px;
+    margin: 1em 1em 1em 1em;
+}
+
+.content-image {
+    border: 10px solid hsl(210, 50%, 85%);
+    margin: 1em 1em 1em 1em;
+    max-width: 90%;
 }
