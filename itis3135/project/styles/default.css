@@ -37,10 +37,12 @@ h1, h2, h3 {
 h1 {
     font-size: 4em;
     font-weight: bold;
+    margin: 20px auto auto auto;
 }
 
 h2 {
     font-size: 2.5em;
+    margin-top: 0;
 }
 
 nav a {
@@ -53,6 +55,7 @@ nav a {
 
 nav a:hover {
     color: hsl(345, 63%, 55%);
+    font-style: italic;
 }
 
  nav {
@@ -130,7 +133,7 @@ nav a:hover {
     grid-template-columns: 2fr 4fr 2fr;
 }
 
-.content-grid-index {
+.content-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -156,6 +159,10 @@ nav a:hover {
     align-items: center;
 }
 
+.content-title {
+    margin-top: 40px;
+}
+
 .button-pink {
     background-color: hsl(12, 100%, 90%);
     border: 3px solid hsl(345, 63%, 70%);
@@ -172,4 +179,32 @@ nav a:hover {
 
 .button-pink:hover {
     background-color: hsl(12, 100%, 93%);
+    font-style: italic;
+}
+
+.button-blue {
+    background-color: hsl(210, 50%, 95%);
+    border: 3px solid hsl(210, 50%, 85%);
+    border-radius: 25px;
+    height: 20px;
+    color: hsl(225, 64%, 30%);
+    font-family: "Amatic SC";
+    font-size: 1em;
+    font-weight: bold;
+    margin: auto;
+    text-align: center;
+    width: 90px;
+    height: 20px;
+}
+
+.button-blue:hover {
+    background-color: hsl(210, 50%, 98%);
+    font-style: italic;
+}
+
+.validate-grid {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
 }
