@@ -72,6 +72,26 @@ a {
     text-decoration: none;
 }
 
+select {
+    background-color: hsl(12, 100%, 90%);
+    border: 3px solid hsl(345, 63%, 70%);
+    border-radius: 25px;
+    width: 40%;
+    height: 40px;
+    color: hsl(345, 63%, 40%);
+    font-family: "Amatic SC";
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+label {
+    font-family: "Amatic SC";
+    font-size: 1.5em;
+    font-weight: bold;
+    align-self: 40%;
+}
+
 /* Classes */
 
 .whitespace {
@@ -120,6 +140,21 @@ a {
 .slideshow-grid {
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
+    column-gap: 10px;
+}
+
+.aboutme-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.select-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
     column-gap: 10px;
 }
 
@@ -249,6 +284,10 @@ a {
     font-family: "Amatic SC";
 }
 
+.gallery-arrow-hover:hover {
+    background-color: hsl(210, 50%, 98%);
+}
+
 /* IDs */
 
 #charity1 {
@@ -273,4 +312,12 @@ a {
     height: 2fr;
     min-height: 1fr;
     max-height: 1fr;
+}
+
+#about-image1 {
+    grid-column: 2 / 4;
+}
+
+#about-image2 {
+    grid-column: 1 / 3;
 }
