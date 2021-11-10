@@ -64,7 +64,7 @@ nav {
 }
 
 p {
-    padding: 10px;
+    text-align: center;
     font-family: "Open Sans";
 }
 
@@ -85,11 +85,46 @@ select {
     text-align: center;
 }
 
+select:hover {
+    background-color: hsl(12, 100%, 93%);
+    font-style: italic;
+}
+
 label {
     font-family: "Amatic SC";
     font-size: 1.5em;
     font-weight: bold;
-    align-self: 40%;
+}
+
+img {
+    max-width: 100%;
+}
+
+legend {
+    font-family: "Amatic SC";
+    font-size: 1.5em;
+}
+
+input {
+    background-color: hsl(12, 100%, 90%);
+    border: 3px solid hsl(345, 63%, 70%);
+    border-radius: 25px;
+    width: 60%;
+    height: 25px;
+    color: hsl(345, 63%, 40%);
+    font-family: "Amatic SC";
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+fieldset {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+    padding-bottom: 30px;
+    border: 2px solid hsl(345, 63%, 70%);
+    border-radius: 25px;
 }
 
 /* Classes */
@@ -98,9 +133,16 @@ label {
     padding: 50px;
 }
 
+.center-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .main-grid {
     display: grid;
     grid-template-columns: 1fr 8fr 1fr;
+    row-gap: 10px;
 }
 
 .footer-grid {
@@ -140,14 +182,14 @@ label {
 .slideshow-grid {
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
-    column-gap: 10px;
+    column-gap: 5px;
 }
 
 .aboutme-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    row-gap: 10px;
-    column-gap: 10px;
+    row-gap: 5px;
+    column-gap: 5px;
 }
 
 .select-box {
@@ -235,12 +277,22 @@ label {
     margin-top: 30px;
 }
 
+.check-box {
+    width: 100px;
+    margin-left: 20%;
+}
+
+.newsletter-title {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 .button-pink {
     background-color: hsl(12, 100%, 90%);
     border: 3px solid hsl(345, 63%, 70%);
     border-radius: 25px;
     width: 100%;
-    height: 40px;
+    height: 1.5em;
     color: hsl(345, 63%, 40%);
     font-family: "Amatic SC";
     font-size: 2em;
@@ -274,18 +326,24 @@ label {
     font-style: italic;
 }
 
-.charity-content {
-    min-height: 1fr;
-    max-height: 1fr;
-}
-
-.gallery-arrow {
+.gallery-arrow-text {
     font-size: 10em;
     font-family: "Amatic SC";
 }
 
-.gallery-arrow-hover:hover {
+.gallery-arrow {
+    max-height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-arrow:hover {
     background-color: hsl(210, 50%, 98%);
+}
+
+.gallery-image {
+    min-width: 40%;
 }
 
 /* IDs */
@@ -293,25 +351,16 @@ label {
 #charity1 {
     grid-column: 2;
     grid-row: 1 / 3;
-    height: 2fr;
-    min-height: 1fr;
-    max-height: 1fr;
 }
 
 #charity2 {
     grid-column: 1;
     grid-row: 2 / 4;
-    height: 2fr;
-    min-height: 2fr;
-    max-height: 2fr;
 }
 
 #charity3 {
     grid-column: 2;
     grid-row: 3 / 5;
-    height: 2fr;
-    min-height: 1fr;
-    max-height: 1fr;
 }
 
 #about-image1 {
@@ -320,4 +369,9 @@ label {
 
 #about-image2 {
     grid-column: 1 / 3;
+}
+
+#sign-up {
+    grid-row: 1 / 3;
+    grid-column: 2;
 }
