@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
         <script src="scripts/jquery.js"></script>
         <script src="scripts/navigation-bar.js"></script>
+        <script src="scripts/newsletter-form.js"></script>
     </head>
     <body>
         <header>
@@ -73,24 +74,24 @@
                             <p>Please sign up if you'd like to support me!</p>
                         </div>
                         <div class="content-box" id="sign-up">
-                            <form name="newsletter">
+                            <form name="newsletter" id="newsletter" action="#">
                                 <fieldset>
                                     <legend>Newsletter Sign Up</legend>
                                     <div class="center-content">
                                         <label for="fname">Enter First Name:</label>
-                                        <input type="text" id ="fname" placeholder="First Name">
+                                        <input type="text" id ="fname" placeholder="First Name" required>
                                     </div>
                                     <div class="center-content">
                                         <label for="lname">Enter Last Name:</label>
-                                        <input type="text" id ="lname" placeholder="Last Name">
+                                        <input type="text" id ="lname" placeholder="Last Name" required>
                                     </div>
                                     <div class="center-content">
                                         <label for="email">Enter Email:</label>
-                                        <input type="text" id ="email" placeholder="Email">
+                                        <input type="text" id ="email" placeholder="Email" required>
                                     </div>
                                     <h3 class="newsletter-title">What are you interested in?</h3>
                                     <span>
-                                        <input type="checkbox" id="new-art" class="check-box">
+                                        <input type="checkbox" id="new-art" class="check-box" checked>
                                         <label for="new-art">New Prints</label>
                                     </span>
                                     <span>

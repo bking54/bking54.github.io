@@ -340,6 +340,8 @@ fieldset {
 
 .gallery-arrow:hover {
     background-color: hsl(210, 50%, 98%);
+    border-left: 12px solid hsl(210, 50%, 85%);
+    border-right: 12px solid hsl(210, 50%, 85%);
 }
 
 .gallery-image {
