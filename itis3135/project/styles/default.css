@@ -185,13 +185,6 @@ fieldset {
     column-gap: 5px;
 }
 
-.aboutme-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    row-gap: 5px;
-    column-gap: 5px;
-}
-
 .select-box {
     display: flex;
     align-items: center;
@@ -255,22 +248,22 @@ fieldset {
 .content-box {
     border: 10px solid hsl(210, 50%, 85%);
     background-color: hsl(210, 50%, 95%);
-    padding: 20px;
-    margin: 1em 1em 1em 1em;
     border-radius: 25px;
+    padding: 10px;
+    margin: 1em 1em 1em 1em;
 }
 
 .content-image {
     border: 10px solid hsl(210, 50%, 85%);
-    margin: 1em 1em 1em 1em;
-    max-width: 90%;
     border-radius: 25px;
+    max-width: 90%;
 }
 
 .content-image-div {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 1em 1em 1em 1em;
 }
 
 .content-title {
@@ -365,12 +358,8 @@ fieldset {
     grid-row: 3 / 5;
 }
 
-#about-image1 {
+#about-content-box {
     grid-column: 2 / 4;
-}
-
-#about-image2 {
-    grid-column: 1 / 3;
 }
 
 #sign-up {
@@ -380,4 +369,14 @@ fieldset {
 
 #navigation {
     display: none;
+}
+
+#about-grid1 {
+    display: grid;
+    grid-template-columns: minmax(5%, 50%) minmax(50%, 95%);
+}
+
+#about-grid2 {
+    display: grid;
+    grid-template-columns: minmax(50%, 95%) minmax(5%, 50%);
 }
