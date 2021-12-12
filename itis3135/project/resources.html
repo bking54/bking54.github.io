@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="scripts/navigation-bar.js"></script>
+        <script src="scripts/resources.js"></script>
     </head>
     <body>
         <header>
@@ -47,17 +48,14 @@
                 <div class="main-content">
                     <h2 class="content-title">Mental Health Resources</h2>
                     <div class="select-box">
-                        <label for="region">Please choose your region: </label>
-                        <select id="region">
-                            <option>North America</option>
-                            <option>South America</option>
-                            <option>Europe</option>
-                            <option>Africa</option>
-                            <option>Asia</option>
-                            <option>Australia</option>
+                        <label for="choice">Please select the resources you want to access: </label>
+                        <select id="choice">
+                            <option value="1">SAMHSA National Helpline</option>
+                            <option value="2">NSP Hotline</option>
+                            <option value="3">fwefwfe</option>
                         </select>
                     </div>
-                    <div class="content-box">
+                    <div class="content-box" id="resource-display">
                         <div class="whitespace"></div>
                     </div>
                 </div>
