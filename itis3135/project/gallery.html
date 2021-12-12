@@ -6,8 +6,11 @@
         <link rel="shortcut icon" href="https://i.etsystatic.com/isla/a4ac45/51933515/isla_280x280.51933515_ndb1zx03.jpg?version=0">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
-        <script src="scripts/jquery.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
         <script src="scripts/navigation-bar.js"></script>
+        <script src="scripts/gallery-slider.js"></script>
     </head>
     <body>
         <header>
@@ -53,7 +56,11 @@
                             </div>
                         </div>
                         <div class="content-image-div gallery-image">
-                            <img src="images/jupiter2.jpg" alt="Sunset on Jupiters moon" class="content-image">
+                            <ul id="slider">
+                                <li><img src="images/jupiter2.jpg" alt=""></li>
+                                <li><img src="images/flowers.jpg" alt=""></li>
+                                <li><img src="images/bunnie_sunset.jpg" alt=""></li>
+                            </ul>
                         </div>
                         <div class="center-content">
                             <div class="content-box gallery-arrow" id="slide-right">
