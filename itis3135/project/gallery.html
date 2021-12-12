@@ -9,41 +9,12 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-        <script src="scripts/navigation-bar.js"></script>
+        <script src="scripts/load-page.js"></script>
         <script src="scripts/gallery-slider.js"></script>
+        <script src="https://www.w3schools.com/lib/w3.js"></script>
     </head>
     <body>
-        <header>
-            <div class="header-grid">
-                <div></div>
-                <div class="logo-div">
-                    <img src="images/favicon.jpg" class="logo" alt="Adamay Webstore Icon">
-                </div>
-                <div>
-                    <h1>Adamay Art Webstore</h1>
-                    <h2>Art Gallery</h2>
-                </div>
-                <div class="logo-div">
-                    <img src="images/favicon.jpg" class="logo" alt="Adamay Webstore Icon">
-                </div>
-                <div class="menu-div">
-                    <img src="https://icon-library.com/images/white-menu-icon-png/white-menu-icon-png-18.jpg" class="menu-icon" id="menu-button" alt="Menu Icon">
-                </div>
-            </div>
-            <div class="navigation" id="navigation">
-                <nav>
-                    <a href="index.html">Home Page</a>
-                    -|-
-                    <a href="about.html">About Me</a>
-                    -|-
-                    <a href="gallery.html">Gallery</a>
-                    -|-
-                    <a href="resources.html">Mental Health Resources</a>
-                    -|-
-                    <a href="charity.html">Charity</a>
-                </nav>
-            </div>
-        </header>
+        <div w3-include-html="components/class-header.html"></div>
         <main>
             <div class="gallery-grid">
                 <div></div>
@@ -61,20 +32,6 @@
                 <div></div>
             </div>
         </main>
-        <footer>
-            <div class="footer-nav"></div>
-            <div class="footer-grid">
-                <div class="validate-grid">
-                    <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.uncc.edu%2Fbking54%2Fitis3135%2Fproject%2Fgallery.html" target="_blank">
-                        <div class="button-blue">Validate HTML</div>
-                    </a>
-                    <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.uncc.edu%2Fbking54%2Fitis3135%2Fproject%2Fgallery.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" target="_blank">
-                        <div class="button-blue">Validate CSS</div>
-                    </a>
-                </div>
-                <div></div>
-                <h3>Created by Bradley King 2021</h3>
-            </div>
-        </footer>
+        <div w3-include-html="components/class-footer.html"></div>
     </body>
 </html>

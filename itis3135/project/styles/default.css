@@ -367,10 +367,6 @@ fieldset {
     grid-column: 2;
 }
 
-#navigation {
-    display: none;
-}
-
 #about-grid1 {
     display: grid;
     grid-template-columns: minmax(5%, 50%) minmax(50%, 95%);
