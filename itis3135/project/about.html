@@ -6,7 +6,9 @@
         <link rel="shortcut icon" href="https://i.etsystatic.com/isla/a4ac45/51933515/isla_280x280.51933515_ndb1zx03.jpg?version=0">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
-        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="scripts/lightbox.min.js"></script>
+        <link href="styles/lightbox.css" rel="stylesheet">
         <script src="scripts/navigation-bar.js"></script>
     </head>
     <body>
@@ -48,7 +50,9 @@
                     <h2 class="content-title">About Me</h2>
                     <div id="about-grid1">
                         <div class="content-image-div">
-                            <img src="images/bridget.jpg" class="content-image">
+                            <a href="images/bridget.jpg" data-lightbox="about-images">
+                                <img src="images/bridget.jpg" alt="Picture of bridget" class="content-image">
+                            </a>
                         </div>
                         <div class="content-box">
                             <p></p>
@@ -59,7 +63,9 @@
                             <p></p>
                         </div>
                         <div class="content-image-div">
-                            <img src="images/bunnies.jpg" class="content-image">
+                            <a href="images/bunnies.jpg" data-lightbox="about-images">
+                                <img src="images/bunnies.jpg" alt="Picture of the bunnies" class="content-image">
+                            </a>
                         </div>
                     </div>
                 </div>

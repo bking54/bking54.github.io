@@ -3,11 +3,11 @@ $(document).ready(function() {
         auto: true,
         minSlides: 1,
         maxSlides: 1,
-        slideWidth: 500,
+        slideWidth: 800,
         slideMargin: 20,
         randomStart: true,
         moveSlides: 1,
-        pause: 3000,
+        pause: 6000,
         captions: true,
         pagerType: 'short'
     });
