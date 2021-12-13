@@ -4,4 +4,6 @@ $(document).ready(function() {
         $('#newsletter').trigger('submit');
     });
 
+    $('#bday').datepicker();
+
 });
