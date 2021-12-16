@@ -5,7 +5,7 @@ $(document).ready(function() {
         let htmlVal = "https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.uncc.edu%2Fbking54%2Fitis3135%2Fproject%2F";
 
         let name = document.URL;
-        name = name.substring(51);
+        name = name.split('/').pop();
 
         let cssValHref = cssVal + name + cssValEnd;
         let htmlValHref = htmlVal + name;
@@ -16,5 +16,12 @@ $(document).ready(function() {
         $('.menu-div').click(function() {
             $('#navigation').stop(true).slideToggle(700);
         });
+
+        $('nav a').each(function() {
+            let str = $(this).attr('href');
+            if (str == name) {
+                $('#page-name').text($(this).text());
+            }
+        })
     });
 });
